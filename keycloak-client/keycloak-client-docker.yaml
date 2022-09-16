@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: keycloak-client
+  zipkin:
+    base-url: http://zipkin-server:9411/
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://eureka-server:8761/eureka/
+    enabled: true
+  instance:
+    hostname: localhost
+    prefer-ip-address: true

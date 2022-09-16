@@ -1,0 +1,13 @@
+server:
+  port: 7071
+
+spring:
+  application:
+    name: keycloak-client
+
+keycloak:
+  realm: control-tower
+  resource: control-tower-microservice
+  auth-server-url: https://auth.saintrivers.tech/auth
+  credentials:
+    secret: CQpcpyUu3fdYqAazbuEqtmrkrQqibkBC
