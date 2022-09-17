@@ -5,3 +5,12 @@ spring:
         jwt:
           issuer-uri: https://auth.saintrivers.tech/auth/realms/control-tower
           jwk-set-uri: https://auth.saintrivers.tech/auth/realms/control-tower/protocol/openid-connect/certs
+
+management:
+  endpoint:
+    health:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health
