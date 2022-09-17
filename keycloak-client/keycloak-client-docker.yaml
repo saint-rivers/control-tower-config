@@ -4,6 +4,4 @@ server:
 spring:
   application:
     name: keycloak-client
-  zipkin:
-    base-url: http://zipkin-server:9411/
 

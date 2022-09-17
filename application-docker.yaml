@@ -8,3 +8,8 @@ eureka:
   instance:
     hostname: localhost
     prefer-ip-address: true
+
+spring:
+  zipkin:
+    base-url: http://zipkin-server:9411/
+
