@@ -7,13 +7,6 @@ spring:
   zipkin:
     base-url: http://localhost:9411/
 
-keycloak:
-  realm: control-tower
-  resource: control-tower-microservice
-  auth-server-url: https://auth.saintrivers.tech/auth
-  credentials:
-    secret: CQpcpyUu3fdYqAazbuEqtmrkrQqibkBC
-
 eureka:
   client:
     register-with-eureka: true
