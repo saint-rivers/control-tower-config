@@ -1,0 +1,10 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: task-service
+  r2dbc:
+    url: r2dbc:pool:postgresql://task-database:5432/task_db
+    username: '{cipher}2d928f5eaff29632ffa8eebc38ac03e3e7b940d306fe722f0489ad15cb2dee1e'
+    password: '{cipher}b93063024e6ad1dce4ece1bc4a8c4e151308a2b88b083f868b26566ac7196429'
