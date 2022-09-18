@@ -6,6 +6,13 @@ spring:
           issuer-uri: https://auth.saintrivers.tech/auth/realms/control-tower
           jwk-set-uri: https://auth.saintrivers.tech/auth/realms/control-tower/protocol/openid-connect/certs
 
+springdoc:
+  swagger-ui:
+    oauth:
+      realm: '{cipher}3dfa972372830b16e55794e0728afa41972c5ce44d17bd8c0ea1c0dbe07e3cd9'
+      clientId: '{cipher}57c00ba3bd6132b5c32b809e3bbb19364047578ababed93f8548d04e2917d6efe8b345f32d0e2768eb8ed22c2db4545c'
+      client-secret: '{cipher}39bb6b05f16aa72ad37fa70e9c93fce1be78fefe40894eb6440e9d4887a29721a3df6964557a61857bd6d6c323431f56747b4d77e16ba2bcd3147be316c460b4'
+
 management:
   endpoint:
     health:
