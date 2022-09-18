@@ -1,0 +1,4 @@
+
+spring:
+  zipkin:
+    base-url: http://eureka-server:9411/
