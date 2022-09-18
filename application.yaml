@@ -6,7 +6,6 @@ spring:
           issuer-uri: https://auth.saintrivers.tech/auth/realms/control-tower
           jwk-set-uri: https://auth.saintrivers.tech/auth/realms/control-tower/protocol/openid-connect/certs
 
-
 springdoc:
   swagger-ui:
     oauth:
