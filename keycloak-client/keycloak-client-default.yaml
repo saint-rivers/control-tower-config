@@ -10,4 +10,6 @@ keycloak:
   resource: control-tower-microservice
   auth-server-url: https://auth.saintrivers.tech/auth
   credentials:
+    username: '{cipher}e26b59978478b2502d74b75fcfad94ea560bfb606e9777aa86fdcc949d21bd00' # admin account for creating users
+    password: '{cipher}244dffe4e0d968f73ab24d54aacdf2af1133f4bc990ce274e6743985c3429d47'
     secret: '{cipher}d0e05f017df6792aebe860d250340b598b7121264b1349badbef2aff433f9f871a9439a9f3f45d6526cae34313c266ea774a4c397d387fc23f359d6555b43041'
