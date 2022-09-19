@@ -15,3 +15,4 @@ keycloak:
     username: dayaneam # admin account for creating users
     password: pass
     secret: '{cipher}d0e05f017df6792aebe860d250340b598b7121264b1349badbef2aff433f9f871a9439a9f3f45d6526cae34313c266ea774a4c397d387fc23f359d6555b43041'
+    provider: secret
