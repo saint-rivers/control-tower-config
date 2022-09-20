@@ -26,10 +26,10 @@ spring:
           predicates:
             - Path=/api/v1/users/**, /api/v1/groups/**, /v3/api-docs
 
-        - id: keycloak-client
-          uri: lb://KEYCLOAK_CLIENT
-          predicates:
-            - Path=/api/user/**, /api/role/**, /api/group/**, /v3/api-docs
+#        - id: keycloak-client
+#          uri: lb://KEYCLOAK_CLIENT
+#          predicates:
+#            - Path=/api/user/**, /api/role/**, /api/group/**, /v3/api-docs
 
         - id: task-service
           uri: lb://TASK-SERVICE

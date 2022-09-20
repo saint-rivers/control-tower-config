@@ -7,7 +7,7 @@ eureka:
     enabled: true
   instance:
     hostname: localhost
-#    prefer-ip-address: true
+    prefer-ip-address: true
 
 spring:
   zipkin:
