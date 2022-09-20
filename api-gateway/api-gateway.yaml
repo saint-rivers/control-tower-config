@@ -10,14 +10,14 @@ spring:
         - id: user-openapi
           uri: lb://USER-SERVICE
           predicates:
-            - Path=/users/**
+            - Path=/users/v3/api-docs
           filters:
             - RewritePath=/users/(?<path>.*), /$\{path}
 
         - id: task-openapi
           uri: lb://TASK-SERVICE
           predicates:
-            - Path=/tasks/**
+            - Path=/tasks/v3/api-docs
           filters:
             - RewritePath=/tasks/(?<path>.*), /$\{path}
 
@@ -27,7 +27,7 @@ spring:
             - Path=/api/v1/users/**
 
         - id: group-service
-          uri: lb://USER-SERVICE
+          uri: lb://USER-SERVICE/
           predicates:
             - Path=/api/v1/groups/**, /v3/api-docs
 
