@@ -24,7 +24,7 @@ spring:
         - id: user-service
           uri: lb://USER-SERVICE
           predicates:
-            - Path=/api/v1/users/**, /api/v1/groups/**, /users/v3/api-docs
+            - Path=/api/v1/users/**, /api/v1/groups/**, /v3/api-docs/users
 
 #        - id: keycloak-client
 #          uri: lb://KEYCLOAK_CLIENT
@@ -34,7 +34,7 @@ spring:
         - id: task-service
           uri: lb://TASK-SERVICE
           predicates:
-            - Path=/api/v1/tasks/**, /tasks/v3/api-docs
+            - Path=/api/v1/tasks/**, /v3/api-docs/tasks
 
         - id: openapi
           uri: http://localhost:${server.port}
