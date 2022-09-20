@@ -46,6 +46,12 @@ spring:
 server:
   port: 8080
 
+management:
+  endpoint:
+    gateway.enabled: true # default value
+  endpoints:
+    web.exposure.include: gateway
+
 springdoc:
   swagger-ui:
     urls:
