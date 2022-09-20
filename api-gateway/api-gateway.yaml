@@ -29,12 +29,12 @@ spring:
         - id: group-service
           uri: lb://USER-SERVICE
           predicates:
-            - Path=/api/v1/groups/**
+            - Path=/api/v1/groups/**, /v3/api-docs
 
         - id: task-service
           uri: lb://TASK-SERVICE
           predicates:
-            - Path=/api/v1/tasks/**
+            - Path=/api/v1/tasks/**, /v3/api-docs
 
         - id: openapi
           uri: http://localhost:${server.port}
