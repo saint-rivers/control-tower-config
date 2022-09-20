@@ -7,19 +7,19 @@ spring:
         locator:
           enabled: true
       routes:
-#        - id: user-service
-#          uri: lb://USER-SERVICE
-#          predicates:
-#            - Path=/users/**
-#          filters:
-#            - RewritePath=/users/(?<path>.*), /$\{path}
+        - id: user-openapi
+          uri: lb://USER-SERVICE
+          predicates:
+            - Path=/users/**
+          filters:
+            - RewritePath=/users/(?<path>.*), /$\{path}
 
-#        - id: task-service
-#          uri: lb://TASK-SERVICE
-#          predicates:
-#            - Path=/tasks/**
-#          filters:
-#            - RewritePath=/tasks/(?<path>.*), /$\{path}
+        - id: task-openapi
+          uri: lb://TASK-SERVICE
+          predicates:
+            - Path=/tasks/**
+          filters:
+            - RewritePath=/tasks/(?<path>.*), /$\{path}
 
         - id: user-service
           uri: lb://USER-SERVICE
