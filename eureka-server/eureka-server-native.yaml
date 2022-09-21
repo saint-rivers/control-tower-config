@@ -9,6 +9,7 @@ eureka:
     registerWithEureka: false
     fetchRegistry: false
   instance:
+    hostname: localhost
     prefer-ip-address: true
 
 management:
