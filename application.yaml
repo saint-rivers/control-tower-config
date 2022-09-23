@@ -16,8 +16,9 @@ springdoc:
 management:
   endpoint:
     health:
+      show-details: always
       enabled: true
   endpoints:
     web:
       exposure:
-        include: refresh,health
+        include: *
